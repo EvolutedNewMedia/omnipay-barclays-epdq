@@ -17,8 +17,7 @@ use Guzzle\Http\Message\Response;
 class DirectLinkPurchaseRequest extends AbstractRequest
 {
 
-	// protected $liveEndpoint = 'https://payments.epdq.co.uk/ncol/prod/orderdirect.asp';
-	protected $liveEndpoint = 'https://mdepayments.epdq.co.uk/ncol/test/orderdirect.asp';
+	protected $liveEndpoint = 'https://payments.epdq.co.uk/ncol/prod/orderdirect.asp';
 	protected $testEndpoint = 'https://mdepayments.epdq.co.uk/ncol/test/orderdirect.asp';
 
 	public function getClientId()
