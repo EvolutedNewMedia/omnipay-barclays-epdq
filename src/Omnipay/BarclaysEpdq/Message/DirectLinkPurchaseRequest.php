@@ -213,7 +213,6 @@ class DirectLinkPurchaseRequest extends AbstractRequest
 		$data['FLAG3D']			= 'Y';
 		$data['WIN3DS']			= 'MAINW';
 		$data['HTTP_ACCEPT']	= '*/*';
-		$data['HTTP_USER_AGENT'] = 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36';
 
 		$card = $this->getCard();
 		if ($card) {
@@ -226,7 +225,6 @@ class DirectLinkPurchaseRequest extends AbstractRequest
 			$data['OWNERTELNO']      = $card->getPhone();
 			$data['OWNERADDRESS']    = $card->getAddress1();
 			$data['OWNERADDRESS2']   = $card->getAddress2();
-			$data['OWNERADDRESS2']   = $card->getNumber();
 			$data['CARDNO']   = $card->getNumber();
 			$data['ED']   = $card->getExpiryDate('my');
 			$data['CVC']   = $card->getCvv();
